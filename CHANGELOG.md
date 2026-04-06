@@ -4,7 +4,14 @@ All notable iteration milestones for the CE demo live here.
 
 ## Unreleased
 
-- Pending next milestone work after `v0.3.0-baseline`
+- Working version: `v0.4.1-bugfix-pass`
+- Focus: unify card presentation, hover copy, and card-based selection / upgrade flows
+- Next major milestone drafted: `v0.5.0-card-presentation-pass`
+- Latest iteration summary:
+  - Skill / trap / passive / resonance presentation lanes now have dedicated test labs
+  - Initial passive selection now supports a batch center reveal before cards fly to each player's passive area
+  - Upgrade windows now preview the current effect by default and switch to upgraded effect on hover / selection
+  - Hover tooltips now include shared keyword annotations for search / recover / seize / lose / pay / freeze / destroy
 
 ## v0.3.0-baseline - 2026-04-05
 

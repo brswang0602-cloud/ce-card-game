@@ -84,13 +84,27 @@ Focus:
 - showdown legality checks
 - skill / passive timing fixes
 
-### `v0.5.0-presentation-pass`
+### `v0.4.1-bugfix-pass`
 
 Focus:
 
-- richer showdown visuals
-- emoji system expansion
-- card movement / reshuffle polish
+- system sweep for runtime blocker bugs
+- showdown / resonance / discard-recovery stability
+- player choice / modal / selection flow fixes
+- continue validating bugfixes against live play sessions
+
+### `v0.5.0-card-presentation-pass`
+
+Focus:
+
+- unified card presentation system
+- skill / trap / passive / resonance card UI
+- stronger cast / impact / result feedback
+- first representative card batch integration
+
+Reference:
+
+- `v0.5.0-card-presentation-pass.md`
 
 ## Practical Workflow
 

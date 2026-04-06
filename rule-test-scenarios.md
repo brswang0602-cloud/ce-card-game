@@ -18,6 +18,11 @@
 | `trap_trigger` | 验证陷阱布置与触发 | 一名玩家布置陷阱，另一名玩家满足触发条件 | 陷阱拥有者支付触发费用，陷阱显示为已翻开，效果和日志一致 |
 | `resonance_retry` | 验证落败后共鸣重判 | 潮汐/秩序/掘墓在结算后触发重判 | `S9` 应出现“共鸣重判”检查点，牌型重新评估后再决定赢家 |
 | `dj_settlement` | 验证 DJ 结算拆分 | 双人对决里双方都有实际投入 | 筹码部分归赢家，系统部分由败者承担，Fold 方仍承受系统伤害 |
+| `card_presentation` | 验证技能卡表现系统 | 固定装入代表技能卡并轮播表现 | 手动模式可逐张预览，自动模式可连续播放卡面、命中提示与收尾节奏 |
+| `trap_presentation_lab` | 验证陷阱卡表现系统 | 固定装入代表陷阱卡并轮播“盖下→翻牌→触发” | 手动模式可逐张预览陷阱，自动模式可连续播放玩家/AI的陷阱盖伏与翻牌成卡 |
+| `passive_presentation_lab` | 验证被动卡表现系统 | 固定装入代表被动卡并轮播“获得→升级→触发” | 手动模式可逐张预览被动卡，自动模式可连续播放完整成卡、升级提示与小卡触发 |
+| `resonance_presentation_lab` | 验证共鸣卡表现系统 | 固定装入五种代表共鸣并轮播“达成→升级→触发” | 手动模式可逐张预览共鸣，自动模式可连续播放正式成卡、升级提示与战斗内触发 |
+| `copy_annotation_lab` | 验证文案与注释层 | 固定装入主动技能、陷阱卡、被动卡、共鸣卡 | 可集中 hover 检查正文、关键词注释、L2/L3 说明与目标口径 |
 | `public_visibility` | 验证公共池盖牌/冻结牌可见性 | 迷雾、冻结、公共池共存 | UI 可见性与实际结算参与范围一致，不因隐藏而少算或多算 |
 | `dealer_first_turn` | 验证首回合庄家不预轮换 | 刚开局进入第一回合 | 首回合保持初始庄家；从第二回合起再顺时针轮换 |
 
@@ -52,4 +57,9 @@
 5. `trap_trigger`
 6. `resonance_retry`
 7. `dj_settlement`
-8. `public_visibility`
+8. `card_presentation`
+9. `trap_presentation_lab`
+10. `passive_presentation_lab`
+11. `resonance_presentation_lab`
+12. `copy_annotation_lab`
+13. `public_visibility`
