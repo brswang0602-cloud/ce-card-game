@@ -102,9 +102,14 @@ Focus:
 - stronger cast / impact / result feedback
 - first representative card batch integration
 
+Status:
+
+- first playable release completed as `v0.5.0`
+
 Reference:
 
 - `v0.5.0-card-presentation-pass.md`
+- `v0.5.0-effect-layering-workplan.md`
 
 ## Practical Workflow
 

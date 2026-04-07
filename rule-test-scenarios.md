@@ -19,9 +19,10 @@
 | `resonance_retry` | 验证落败后共鸣重判 | 潮汐/秩序/掘墓在结算后触发重判 | `S9` 应出现“共鸣重判”检查点，牌型重新评估后再决定赢家 |
 | `dj_settlement` | 验证 DJ 结算拆分 | 双人对决里双方都有实际投入 | 筹码部分归赢家，系统部分由败者承担，Fold 方仍承受系统伤害 |
 | `card_presentation` | 验证技能卡表现系统 | 固定装入代表技能卡并轮播表现 | 手动模式可逐张预览，自动模式可连续播放卡面、命中提示与收尾节奏 |
-| `trap_presentation_lab` | 验证陷阱卡表现系统 | 固定装入代表陷阱卡并轮播“盖下→翻牌→触发” | 手动模式可逐张预览陷阱，自动模式可连续播放玩家/AI的陷阱盖伏与翻牌成卡 |
-| `passive_presentation_lab` | 验证被动卡表现系统 | 固定装入代表被动卡并轮播“获得→升级→触发” | 手动模式可逐张预览被动卡，自动模式可连续播放完整成卡、升级提示与小卡触发 |
-| `resonance_presentation_lab` | 验证共鸣卡表现系统 | 固定装入五种代表共鸣并轮播“达成→升级→触发” | 手动模式可逐张预览共鸣，自动模式可连续播放正式成卡、升级提示与战斗内触发 |
+| `effect_layering_lab` | 验证技能结果分层 | 固定装入全部已接入分层的主动技能并轮播“结果去向” | 手动模式可逐项预览摸牌 / 检索入手 / 判定落弃 / 弃牌 / 回收 / 冻结 / 销毁 / 公共牌操作 / 超上限弃置 / 互换 / 目标高亮 / 光环压制 / 偷牌流 / 公共牌流，自动模式可连续检查全部主动技能是否真的有不同手感 |
+| `trap_presentation_lab` | 验证陷阱卡表现系统 | 固定装入代表陷阱卡并轮播“盖下→翻牌→反制撞击/盖牌伏击/技能改写/结算逆转” | 手动模式可逐张预览陷阱，自动模式可连续播放玩家/AI的陷阱盖伏、翻牌成卡，以及反制陷阱撞碎技能卡、盖牌区伏击、技能改写和结算逆转链路 |
+| `passive_presentation_lab` | 验证被动卡表现系统 | 固定装入代表被动卡并轮播“获得→升级→触发→结果去向” | 手动模式可逐张预览被动卡，自动模式可连续播放完整成卡、升级提示、小卡触发，以及金币/摸牌/检索/回收/弃牌等结果分层 |
+| `resonance_presentation_lab` | 验证共鸣卡表现系统 | 固定装入五种代表共鸣并轮播“达成→升级→触发→结果去向” | 手动模式可逐张预览共鸣，自动模式可连续播放正式成卡、升级提示、战斗内触发，以及支付/额外盖牌/公共牌补翻/夺取/回收/额外摸牌等结果分层 |
 | `copy_annotation_lab` | 验证文案与注释层 | 固定装入主动技能、陷阱卡、被动卡、共鸣卡 | 可集中 hover 检查正文、关键词注释、L2/L3 说明与目标口径 |
 | `public_visibility` | 验证公共池盖牌/冻结牌可见性 | 迷雾、冻结、公共池共存 | UI 可见性与实际结算参与范围一致，不因隐藏而少算或多算 |
 | `dealer_first_turn` | 验证首回合庄家不预轮换 | 刚开局进入第一回合 | 首回合保持初始庄家；从第二回合起再顺时针轮换 |
@@ -58,8 +59,9 @@
 6. `resonance_retry`
 7. `dj_settlement`
 8. `card_presentation`
-9. `trap_presentation_lab`
-10. `passive_presentation_lab`
-11. `resonance_presentation_lab`
-12. `copy_annotation_lab`
-13. `public_visibility`
+9. `effect_layering_lab`
+10. `trap_presentation_lab`
+11. `passive_presentation_lab`
+12. `resonance_presentation_lab`
+13. `copy_annotation_lab`
+14. `public_visibility`
