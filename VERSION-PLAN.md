@@ -111,6 +111,33 @@ Reference:
 - `v0.5.0-card-presentation-pass.md`
 - `v0.5.0-effect-layering-workplan.md`
 
+### `v0.6.0-ai-strategy-pass`
+
+Focus:
+
+- land the shared AI decision engine for Step 1~5
+- turn role docs into configurable player personas
+- reduce random-only behavior in skill / cover / fold / upgrade choices
+- prepare large-scale automated simulations for later balance work
+
+Current progress:
+
+- strongest sample `阿杰C` already uses the shared strategic lane
+- `老李A / 小美B / 大伟D` now also share the same advanced AI engine through distinct persona layers
+- `思思E` is now added as a simulation-only fifth AI persona for lab and future balance-simulation use, while the live playable roster remains unchanged
+- opponent behavior memory and pot-odds reasoning are in place
+- bluff / anti-bluff first pass is now wired into fixed lab states
+- dedicated `ai_strategy_lab` is available for repeatable AI decision reviews
+- `ai_strategy_lab` now covers all five AI personas across action and upgrade presets
+- advanced target choice now uses persona-weighted scoring instead of one shared target heuristic
+- bluff evaluation now estimates per-target fold chance and shows a `关键阻挡者` in the AI lab
+- visible-discard dead-outs and recent search-skill image are now part of chase / bluff confidence
+- `ai_balance_lab` is now in progress as the next-step 5-AI automated simulation and balance summary entry, using `思思E / 老李A / 小美B / 阿杰C / 大伟D` without changing the live playable `你 + 4AI` roster
+
+Reference:
+
+- `v0.6.0-ai-strategy-implementation-plan.md`
+
 ## Practical Workflow
 
 Use this order every time:
