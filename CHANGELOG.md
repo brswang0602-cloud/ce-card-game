@@ -2,7 +2,42 @@
 
 All notable iteration milestones for the CE demo live here.
 
-## v0.6.0 - in progress
+## v0.7.5 - in progress
+
+- Branch focus: `v0.7.5-skill-effect-pass`
+- Current focus:
+  - Start a dedicated skill-effect correction pass after repeated live playtests exposed gaps between intended design and actual runtime behavior
+  - Treat this version as a large-scale effect-quality and rules-alignment sweep instead of a broad new-feature release
+  - Separate `v0.7.5` clearly from the already-accumulated `v0.7.0` readability / balance / UI optimization work
+  - Prioritize high-frequency and high-impact active skills, traps, and passive-linked effect chains before opening new content
+- Initial work plan:
+  - Build a card-by-card audit list for “expected effect vs current runtime result”
+  - Review release timing, target rules, draw / discard / recover / freeze / steal / public-card manipulation chains
+  - Fix the most visible mismatches first, especially cases discovered through repeated real matches rather than only lab scenes
+  - Expand existing test scenes so important skill-effect chains can be reproduced directly without replaying whole matches
+  - Keep output grouped into a publishable fix summary for the later GitHub update
+
+## v0.7.0 - release wrap-up
+
+- Branch focus: `v0.7.0-ai-balance-pass`
+- Status:
+  - The main `v0.7.0` optimization batch is now in release-wrap-up state and ready for GitHub-side整理 / 归档 before the next version line continues
+- Current focus:
+  - Move the first `v0.7` slice to new-player onboarding, so a fresh player can understand the goal and full loop in about 10 minutes
+  - Start the post-`v0.6` optimization cycle around AI live-play quality, persona contrast, and balance validation
+  - Use `ai_strategy_lab` and `ai_balance_lab` as the primary review loop before pushing more visual or content-heavy work
+  - Improve how clearly real matches expose AI intent, pressure timing, gold discipline, and chase risk
+  - Keep the already-released settlement / showdown presentation stable unless a balance pass exposes a real gameplay regression
+- Initial work plan:
+  - Add a dedicated tutorial start entry on the start screen instead of forcing new players straight into the full live build
+  - Define the minimum rules a new player must know: win condition, round flow, cover/fold/all-in choices, and settlement logic
+  - Build a guided first-play script that teaches one complete round chain through controlled states and UI highlights
+  - Compare lab decisions against real-table behavior for `老李A / 小美B / 阿杰C / 大伟D`
+  - Identify the highest-value AI issues in over-covering, passive hold, weak all-in timing, and mid-strength pressure spots
+  - Tighten persona-specific thresholds so expert / veteran / steady / aggressive players stop collapsing into one shared rhythm during long matches
+  - Turn `ai_balance_lab` into a repeatable release gate for future `v0.7` checkpoints
+
+## v0.6.0 - 2026-04-10
 
 - Branch focus: `v0.6.0-ai-strategy-pass`
 - Current progress:

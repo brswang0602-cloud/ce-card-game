@@ -108,8 +108,8 @@ Status:
 
 Reference:
 
-- `v0.5.0-card-presentation-pass.md`
-- `v0.5.0-effect-layering-workplan.md`
+- `版本专题/v0.5.0-card-presentation-pass.md`
+- `版本专题/v0.5.0-effect-layering-workplan.md`
 
 ### `v0.6.0-ai-strategy-pass`
 
@@ -136,7 +136,67 @@ Current progress:
 
 Reference:
 
-- `v0.6.0-ai-strategy-implementation-plan.md`
+- `版本专题/v0.6.0-ai-strategy-implementation-plan.md`
+
+### `v0.7.0-ai-balance-pass`
+
+Focus:
+
+- add a guided new-player onboarding path before deeper balance work
+- turn the shared AI engine into a more human-readable live-play opponent set
+- connect strategy lab and balance lab back into real table pacing and result quality
+- reduce "correct but stiff" decisions in cover / raise / hold / all-in timing
+- keep `v0.6` settlement presentation stable while improving match readability and AI personality contrast
+
+Planned workstreams:
+
+- new-player onboarding entry on the start screen, with a guided 10-minute first-play path
+- tutorial-specific explanation layers for win condition, round structure, cover/fold/all-in choices, and settlement
+- AI live-play balance pass for `你 + 4AI`, especially mid-strength pressure, gold discipline, and over-cover behavior
+- stronger persona separation in practical matches instead of only lab-side score differences
+- in-match AI intent / risk readability, so players can more easily understand why an AI is pressing, holding, chasing, or folding
+- simulation review pass to turn `ai_balance_lab` into a real regression gate before release
+
+Success bar:
+
+- a brand-new player can understand the game goal and one full round chain within about 10 minutes
+- live matches feel less random and less samey across the four AI seats
+- `ai_strategy_lab` choices better match what the same persona does in real games
+- `ai_balance_lab` can surface obvious outliers before manual playtests
+- no regression in start screen, showdown, settlement, or versioned test scenes
+
+Reference:
+
+- `版本专题/v0.7.0-ai-balance-pass.md`
+- `版本专题/v0.7.0-new-player-onboarding-plan.md`
+
+### `v0.7.5-skill-effect-pass`
+
+Focus:
+
+- run a large-scale skill-effect correctness and expectation-alignment sweep after repeated live-play findings
+- fix places where actual release results differ from the original design intent for active skills, traps, and passive-linked effect chains
+- improve card-by-card reproducibility through better test scenes before the next larger milestone continues
+- keep the already-accumulated `v0.7.0` readability and AI work stable while the card-effect layer is corrected
+
+Planned workstreams:
+
+- build an “expected effect vs current runtime result” audit list for representative cards
+- prioritize high-frequency, high-visibility, and high-impact skill mismatches first
+- review release timing, target scope, card movement, gold movement, discard / recover chains, and public-card interaction rules
+- unify card-effect validation through dedicated debug scenes instead of relying only on full-match replay
+- convert the final fix list into a clean publishable update summary for GitHub-side release notes
+
+Success bar:
+
+- the most-played and most-visible skill / trap chains match their intended design in repeated playtests
+- no obvious mismatch remains in core effect families such as draw, discard, recover, freeze, steal, public-card replace, or trap interception
+- effect fixes can be reproduced from test scenes without replaying an entire live match each time
+- `demo.html` stays syntax-clean and no blocker regression is introduced into the main live table flow
+
+Reference:
+
+- `版本专题/v0.7.5-skill-effect-pass.md`
 
 ## Practical Workflow
 
