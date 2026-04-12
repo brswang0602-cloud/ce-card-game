@@ -4970,7 +4970,7 @@ body.debug-paused *, body.debug-paused *::before, body.debug-paused *::after { a
       <div class="hero-brand">
         <div class="hero-kicker">当前可玩构建</div>
         <h1>🃏 卡牌对决</h1>
-        <p class="subtitle">扑克 × 自走棋 × 多人竞技。当前焦点是把 <span id="start-version-inline">Phase 1 Demo</span> 做成一版规则可复验、流程可阅读、对局更有表现力的可玩原型。</p>
+        <p class="subtitle">扑克 × 自走棋 × 多人竞技。当前焦点是把 <span id="start-version-inline">v0.7.0 AI 平衡与可读性版本</span> 做成一版规则可复验、流程可阅读、对局反馈更直观的可玩原型。</p>
       </div>
       <div class="hero-launch">
         <div class="hero-launch-kicker">PLAY NOW</div>
@@ -4978,8 +4978,8 @@ body.debug-paused *, body.debug-paused *::before, body.debug-paused *::after { a
         <div class="hero-launch-note">主入口始终放在第一视觉焦点。你可以从这里直接试玩当前版本，再根据右下角的调试入口复验关键规则场景。</div>
         <button class="btn btn-primary start-btn start-btn-primary" onclick="startGame()">🎮 开始游戏（R1·5人5回合）</button>
         <div class="hero-launch-meta">
-          <div class="hero-launch-pill">版本 <strong id="start-version-inline-pill">v0.5.0-card-presentation-pass</strong></div>
-          <div class="hero-launch-pill">状态 <strong id="start-version-badge-inline">开发中</strong></div>
+          <div class="hero-launch-pill">版本 <strong id="start-version-inline-pill">v0.7.0-ai-balance-pass</strong></div>
+          <div class="hero-launch-pill">状态 <strong id="start-version-badge-inline">可发布</strong></div>
         </div>
       </div>
     </div>
@@ -4987,22 +4987,22 @@ body.debug-paused *, body.debug-paused *::before, body.debug-paused *::after { a
     <div class="version-head">
       <div>
         <div class="version-kicker">CURRENT BUILD</div>
-        <div class="version-title" id="start-version-title">v0.5.0-card-presentation-pass</div>
-        <div class="version-sub" id="start-version-sub">当前开发中的统一卡牌表现系统版本</div>
+        <div class="version-title" id="start-version-title">v0.7.0-ai-balance-pass</div>
+        <div class="version-sub" id="start-version-sub">当前可发布的 AI 平衡与桌面对局可读性优化版本</div>
       </div>
-      <div class="version-badge" id="start-version-badge">开发中</div>
+      <div class="version-badge" id="start-version-badge">可发布</div>
     </div>
     <div class="version-pills" id="start-version-pills"></div>
     <div class="version-body">
       <div class="version-spotlight">
         <div class="version-spotlight-head">
-          <div class="version-spotlight-icon" id="start-version-spotlight-icon">🧭</div>
+          <div class="version-spotlight-icon" id="start-version-spotlight-icon">🧠</div>
           <div>
             <div class="version-spotlight-kicker" id="start-version-spotlight-kicker">本轮重点</div>
-            <div class="version-spotlight-title" id="start-version-spotlight-title">规则链收口 + 弃牌堆系统成型</div>
+            <div class="version-spotlight-title" id="start-version-spotlight-title">AI 读局、桌面信息层与关键交互已经整体收紧</div>
           </div>
         </div>
-        <div class="version-spotlight-desc" id="start-version-spotlight-desc">这一版优先把“能不能稳定玩、能不能稳定复验、能不能看懂过程”做扎实。</div>
+        <div class="version-spotlight-desc" id="start-version-spotlight-desc">这一版重点完成了 AI 玩家区实体卡背、共享被动选牌台、升级与弃牌实牌化、发牌/被动/淘汰规则收口，以及一批高频交互与信息可读性修正，已经可以作为 v0.7 版本上传。</div>
       </div>
       <div class="version-grid" id="start-version-grid"></div>
     </div>
@@ -5336,65 +5336,65 @@ const RESONANCE_TABLE = {
 };
 
 const CURRENT_VERSION_INFO = {
-  version: 'v0.6.0',
-  subtitle: '结算演出与 AI 调优版本',
-  badge: 'v0.6',
+  version: 'v0.7.0',
+  subtitle: 'AI 平衡与桌面对局可读性优化版本',
+  badge: 'v0.7',
   spotlight: {
-    icon: '💰',
+    icon: '🧠',
     kicker: '本轮重点',
-    title: '三段结算链路已经打通，并汇总了这一阶段的 AI 优化',
-    desc: '这一版重点完成了 all-in 与平局结算修正、最强牌型 HUD、金币飞向赢家筹码图标、回合开始提示和结算测试台；同时也纳入了此前在其他线程推进的 AI 决策、平衡和测试台优化，已经可以作为 v0.6 基线上传。'
+    title: 'AI 读局、实体卡面与关键规则时序已经整体收口',
+    desc: '这一版重点完成了 AI 玩家区实体卡背、共享被动选牌台、技能/陷阱升级与弃牌窗口实牌化、发牌与被动时序修正、淘汰后保牌规则、技能获取概率与弃牌堆明暗信息收口，已经可以作为 v0.7 版本上传。'
   },
   pills: [
-    {label: '基线版本', value: 'v0.5.0'},
-    {label: '当前分支', value: 'main'},
-    {label: '核心方向', value: '结算表现 + AI'},
-    {label: '表现状态', value: '可上传'}
+    {label: '基线版本', value: 'v0.6.0'},
+    {label: '当前分支', value: 'codex/v0.7.0-ai-balance-pass'},
+    {label: '核心方向', value: 'AI + 可读性 + 规则收口'},
+    {label: '表现状态', value: '可发布'}
   ],
   groups: [
     {
-      icon: '💰',
-      tone: '已打通',
-      title: '结算与分配',
+      icon: '🪪',
+      tone: '已重做',
+      title: 'AI 桌面信息区',
       items: [
-        '底池金币 → 牌面金币 → 牌型加成金币的三段结算节奏已接通',
-        '金币会飞向赢家名字旁的金币图标，并累计显示 +N 后再融合入总筹码',
-        '平局结算改为真正按平分处理，多个赢家会同步收到金币与奖杯表现',
-        'all-in 入局资格与多人只剩单人出牌时的结算逻辑已同步修正'
+        'AI 玩家区顶部栏已移除，四个 AI 区获得更大的可视空间',
+        '金币移到玩家名右侧，庄家改成右上角标识，信息层次更清晰',
+        '数字牌、技能卡、陷阱卡都改成实体卡背，技能与陷阱统一用黄色等级卡背',
+        '最低筹码与最高筹码玩家现在有更明显的危险/领先脉冲提示，淘汰回合危险感进一步增强'
       ]
     },
     {
-      icon: '🏆',
-      tone: '增强中',
-      title: '亮牌与提示',
+      icon: '🃏',
+      tone: '已统一',
+      title: '手牌、盖牌与升级交互',
       items: [
-        '最强牌型 HUD 现在会悬浮在公共牌与底池之间，并持续跟随当前最大牌型更新',
-        '最终牌型加成金币会从最强牌型 HUD 区域起爆并飞向赢家筹码池',
-        '平局 emoji、并列赢家奖杯与多人分摊表现已经统一',
-        '回合结束弹窗已移除，改成更醒目的回合开始与淘汰回合提示'
+        '玩家与 AI 的盖牌动作都改成真实卡面飞到盖牌区最终落点',
+        '自己盖牌区的暗置数字牌和暗置陷阱牌现在 hover 可见',
+        '技能/陷阱升级支持多选、取消选中、已选中标识，并收紧了窗口布局',
+        '数字牌与技能/陷阱超上限时，都会立即进入统一的实牌弃牌窗口'
       ]
     },
     {
-      icon: '🎬',
-      tone: '收紧中',
-      title: '节奏与演出',
+      icon: '🎴',
+      tone: '已完善',
+      title: '被动与共享选牌台',
       items: [
-        '结算中的多余老资源金币飞行特效已移除，统一改用当前金币结算链路',
-        '最强牌型爆金币会按牌型等级变化强弱，并支持边缘庆祝与抖屏层级',
-        '中区 HUD、公共牌区、底池区与玩家区的遮挡关系已重新收紧',
-        '人类玩家盖牌金币现已按每张数字牌分别起飞，不再集中从错误点冒出'
+        '首回合被动选择与非首回合共享被动选牌台已经统一成同一套中心舞台风格',
+        '共享被动台按最低金币玩家优先选取，并支持归属标识和飞入各自被动区',
+        '玩家信息条改成更紧凑的横向信息带，已有被动通过 hover 卡牌化浮窗查看',
+        'AI 升级技能、陷阱和被动时不再泄露信息，而是直接在对应卡位做金光升级表现'
       ]
     },
     {
-      icon: '🧪',
-      tone: '可复验',
-      title: '测试与校验',
+      icon: '📐',
+      tone: '已收口',
+      title: '规则时序与信息修正',
       items: [
-        '结算金币测试台可逐个点开十种牌型，直接复验整套金币结算链路',
-        'AI 平衡台与 AI 策略测试台会一并保留，用于复验此前跨线程完成的 AI 调优',
-        '现有卡牌、陷阱、被动、共鸣和效果分层测试台仍可继续使用',
-        '平局、DJ、Raise 补跟与单人出牌胜利场景都保留在固定规则验证清单中',
-        '当前版本已适合做 v0.6 上传，后续可以在此基础上继续推进 v0.7'
+        '回合开始不再先统一触发全员被动，而是改成谁行动谁触发',
+        '发牌顺序已经调整为：数字牌 → 技能牌 → 升级 → 公共牌 → 行动',
+        '淘汰回合结束进入下一阶段时，幸存者的数字牌与技能牌会继续保留',
+        '技能获取概率显示现在与实际执行共用同一套逻辑，弃牌堆明弃/暗弃也已按规则收口',
+        '当前版本已适合做 v0.7 上传，后续主线可切换到 v0.7.5 的技能效果大修'
       ]
     }
   ]
